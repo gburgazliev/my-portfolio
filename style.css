@@ -80,7 +80,7 @@ section.active {
     position: fixed;
     height: 100vh;
     width: 30%;
-    gap: 10px;
+    
    
     background-color: #131415;
 }
@@ -117,6 +117,7 @@ header a:hover {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 10px;
     
           
       }
