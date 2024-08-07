@@ -114,11 +114,11 @@ section.active {
 
 #mobile-drawer svg {
     color: white;
-    font-size: 30px;
-    ;
+    
+    
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 5px;
+    top: 5px;
 }
 
 #mobile-drawer ul {
