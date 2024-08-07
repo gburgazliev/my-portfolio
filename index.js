@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileNavLinks = document.querySelectorAll('.nav-links-mobile a');
     const burger = document.querySelector('.burger');
     sections[0].classList.add('active');
+    navLinks[0].style.backgroundColor = 'red';
+    mobileNavLinks[0].style.backgroundColor = 'red';
    const mobileDrawer = document.getElementById('mobile-drawer');
 
 
@@ -19,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
             sections.forEach((section) => {
                 if (section.getAttribute('id') === link.getAttribute('href').replace('#', '')) {
                     section.classList.add('active');
+                    mobileNavLinks.forEach((navLink) => navLink.style.backgroundColor = 'transparent');
+                    navLinks.forEach((navLink) => navLink.style.backgroundColor = 'transparent');
+                   link.style.backgroundColor = 'red';
                 }
             })
     }
