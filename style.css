@@ -10,6 +10,7 @@ body {
     margin: auto;
     background: linear-gradient(90deg, #374552 35%, #1a283e 10%);
     font-family: "Audiowide", sans-serif;
+    overflow: hidden;
 }
 
 @keyframes slideDrawer {
