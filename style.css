@@ -7,7 +7,7 @@
 
 body {
     margin: auto;   
-    background: linear-gradient(68deg, #374552 35%, #1a283e 10%);
+    background: linear-gradient(90deg, #374552 35%, #1a283e 10%);
     font-family: "Audiowide", sans-serif;
    
     
@@ -104,7 +104,7 @@ section.active {
  display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    
     height: 100vh;
     width: 30%;
     
@@ -112,12 +112,9 @@ section.active {
     background-color: #131415;
 }
 
-#mobile-drawer svg {
-    color: white;
-    
-    
-    position: fixed;
-    left: 5px;
+#close-icon {
+   position: absolute;
+    left: 5px ;
     top: 5px;
 }
 
