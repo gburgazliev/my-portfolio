@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,9 @@
 }
 
 body {
-    margin: auto;   
+    margin: auto;
     background: linear-gradient(90deg, #374552 35%, #1a283e 10%);
     font-family: "Audiowide", sans-serif;
-   
-    
 }
 
 @keyframes slideDrawer {
@@ -18,17 +17,17 @@ body {
         opacity: 0;
         transform: translateY(-100%);
     }
-  
+
     50% {
         opacity: 0.5;
-       
+
     }
 
     100% {
         opacity: 1;
         transform: translateY(0);
     }
-    
+
 }
 
 @keyframes slideDrawerClose {
@@ -36,17 +35,17 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-  
+
     50% {
         opacity: 0.5;
-       
+
     }
 
     100% {
         opacity: 0;
         transform: translateY(-100%);
     }
-    
+
 }
 
 .slideDrawerClose {
@@ -57,20 +56,16 @@ body {
     animation: slideDrawer 0.5s ease-in-out;
 }
 
-
 a {
     text-decoration: none;
     color: white;
     font-size: 20px;
- 
     padding: 10px 20px;
     border-radius: 5px;
-  
 }
 
 .burger {
     display: none;
-
 }
 
 .nav-links {
@@ -90,8 +85,7 @@ section {
 section.active {
     display: flex;
     flex-direction: column;
-
-     width: 100%;
+    width: 100%;
     height: 100%;
     margin-top: 30px;
 }
@@ -101,30 +95,28 @@ section.active {
 }
 
 #mobile-drawer.active {
- display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-     position: absolute;
+    position: absolute;
     height: 100vh;
     width: 30%;
-    
-   
     background-color: #131415;
 }
 
 #close-icon {
-   position: fixed;
-    left: 5px ;
+    position: fixed;
+    left: 5px;
     top: 5px;
 }
 
 #mobile-drawer ul {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 header a:hover {
- background-color: aquamarine !important;
- box-shadow: 0px 0px 5px rgb(229, 229, 229);
+    background-color: aquamarine !important;
+    box-shadow: 0px 0px 5px rgb(229, 229, 229);
 }
 
 section h1 {
@@ -142,45 +134,41 @@ section p {
     font-family: 'Courier New', Courier, monospace;
 }
 
-@media  screen and (max-width:500px) {
-     header {
+@media screen and (max-width:500px) {
+    header {
         display: flex;
         justify-content: center;
         align-items: center;
-      
         background-color: #131415;
         color: white;
         font-family: "Audiowide", sans-serif;
-         
-     }  
-    
+
+    }
+
     .nav-links {
-           display: none;
-       }
-      
+        display: none;
+    }
 
-       .burger{
-          display: flex;
-              justify-content: center;
-              cursor: pointer;
-           
-       }
 
-      .nav-links-mobile{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-    
-          
-      }
+    .burger {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
 
-      #mobile-drawer a {
-            
-            font-size: 20px;
-            padding: 5px 10px;
-        }
+    }
 
-        
+    .nav-links-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #mobile-drawer a {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+
 
 }

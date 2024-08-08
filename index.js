@@ -11,80 +11,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const handleContentChange = (link) => {
-
-
         sections.forEach((section) => {
             section.classList.remove('active');
-        })
-
-
+        });
         sections.forEach((section) => {
             if (section.getAttribute('id') === link.getAttribute('href').replace('#', '')) {
                 section.classList.add('active');
-
                 mobileNavLinks.forEach((navLink) => navLink.style.backgroundColor = 'transparent');
                 navLinks.forEach((navLink) => navLink.style.backgroundColor = 'transparent');
                 link.style.backgroundColor = 'red';
             }
-        })
+        });
     }
 
     const handleDrawerAnimation = () => {
         if (mobileDrawer.classList.contains('active')) {
-
             mobileDrawer.classList.add('slideDrawerClose');
             mobileDrawer.classList.remove('slideDrawer')
             setTimeout(() => {
                 mobileDrawer.classList.toggle('active');
 
             }, 300);
-
         } else {
             mobileDrawer.classList.add('active');
             mobileDrawer.classList.add('slideDrawer');
             mobileDrawer.classList.remove('slideDrawerClose');
         }
-
-
     }
 
 
 
     navLinks.forEach((link) => {
-
         link.addEventListener('click', (e) => {
             e.preventDefault();
             handleContentChange(link);
-
         });
     });
 
     mobileNavLinks.forEach((link) => {
-
-
         link.addEventListener('click', (e) => {
             e.preventDefault();
             handleContentChange(link);
             handleDrawerAnimation();
-
-
-
-
         });
-
-
-
     });
 
     burger.addEventListener('click', () => {
-
         handleDrawerAnimation();
-
-
-
     });
-
-
 
     closeIcon.addEventListener('click', () => {
         mobileDrawer.classList.remove('slideDrawer');
