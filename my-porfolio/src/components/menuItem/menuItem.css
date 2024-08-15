@@ -1,0 +1,28 @@
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 240px;
+    border: 1px solid black;
+    margin: 0 7.5px 15px;
+    
+  
+    cursor: pointer;
+
+  user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+@media  screen and (min-width: 1017px) {
+    .menu-item {
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+
+}
