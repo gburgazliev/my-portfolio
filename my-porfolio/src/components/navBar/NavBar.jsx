@@ -23,8 +23,10 @@ const NavBar = () => {
                 type: "spring",
                 stiffness: 20,
                 restDelta: 2
-            }
+            },
+        
         }),
+    
         closed: {
             clipPath: "circle(30px at 40px 40px)",
             transition: {
@@ -32,13 +34,16 @@ const NavBar = () => {
                 type: "spring",
                 stiffness: 400,
                 damping: 40
-            }
+            },
+            
+
         }
     };
 
 
     return (
-        <motion.nav
+        <header>
+            <motion.nav
             initial={false}
             animate={isOpen ? "open" : "closed"}
             custom={height}
@@ -53,6 +58,8 @@ const NavBar = () => {
             <Navigation />
             <BurgerIcon toggle={toggleOpen} isOpen={isOpen} />
         </motion.nav>
+        </header>
+        
     )
 }
 
