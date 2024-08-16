@@ -1,33 +1,42 @@
-* {
+
+html, body { 
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e, #1b1b2f, #0d0d22);
+ height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-html, body { 
-  background: linear-gradient(90deg, #6464c2, rgba(24, 26, 41, 0.9));
-  /* overflow-x: hidden; 
-  
-  min-height: 100vh;  */
-}
+ 
 
+
+}
+html {
+  scroll-behavior: smooth;
+}
 /* html {
   background-color: #6464c2;
     overflow: hidden;
   height: 100%;
 }
-html, body {
+ */
+/* html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
 } */
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+ 
 }
 
-body > div {
+
+
+
+:root {
   height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  
+  overscroll-behavior: none;
 }
