@@ -1,0 +1,30 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 20vh;
+   
+}
+
+.introduction .introduction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right:  0;
+    top: 0;
+    padding: 0 24px;
+}
+
+.introduction-container h1 {
+    font-size: 2.5rem;
+    
+    
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
