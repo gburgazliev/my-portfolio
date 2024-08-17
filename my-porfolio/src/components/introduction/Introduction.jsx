@@ -22,17 +22,20 @@ const Introduction = () => {
 
     const h2Variants = {
         uncolored: {
-            color: "#000",
-
+            color: "hsl(195, 100%, 50%)",
+          
+            
         },
         colored: (custom) => ({
-            color: 'hsl(0, 0%, 100%)',
+            color: "hsl(39, 100%, 50%)",
+           
             transition: {
                 delay: custom * 0.1,
                 repeat: Infinity,
                 repeatType: "reverse",
                 repeatDelay: 2,
 
+                 
             }
         })
     }

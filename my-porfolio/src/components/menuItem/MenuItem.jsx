@@ -36,7 +36,13 @@ const MenuItem = ({ string, i }) => {
             item.classList.add('animate')
         }
 
-        const handleMouseLeave = () => {
+        const handleMouseLeave = (e) => {
+            const rect = item.getBoundingClientRect();
+             
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            item.style.setProperty("--x", `${x}px`);
+            item.style.setProperty("--y", `${y}px`);
             item.classList.remove('animate')
         }
 
