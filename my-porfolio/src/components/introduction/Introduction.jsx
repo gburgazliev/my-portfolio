@@ -32,10 +32,10 @@ const Introduction = () => {
     }
 
     const containerVariants = {
-        hidden: { opacity: 0 },
+        hidden: { opacity: 0 , },
         visible: {
             opacity: 1,
-
+           
             transition: {
                 when: "beforeChildren", // start the parent's transition before the children
                 staggerChildren: 0.5, // delay between each child's animation
@@ -44,9 +44,10 @@ const Introduction = () => {
     };
 
     const childVariants = {
-        hidden: { opacity: 0 },
+        hidden: { opacity: 0, scale: 0.7 },
         visible: {
             opacity: 1,
+            scale: 1,
             transition: {
                 duration: 0.5
             }
@@ -135,7 +136,7 @@ const Introduction = () => {
                 animate="visible"
             />
             <motion.div layout
-                className="introduction-container">
+                className="introduction-container" >
                 <motion.h1 layout variants={childVariants}>{h1Words.map((word, i) => {
                     return <motion.span
                         key={i}
