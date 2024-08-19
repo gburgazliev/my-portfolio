@@ -24,9 +24,9 @@ const NavBar = () => {
                 stiffness: 20,
                 restDelta: 2
             },
-        
+
         }),
-    
+
         closed: {
             clipPath: "circle(30px at 40px 40px)",
             transition: {
@@ -35,31 +35,51 @@ const NavBar = () => {
                 stiffness: 400,
                 damping: 40
             },
-            
+
 
         }
     };
 
 
+    const containerBackgroundVariants = {
+        open: {
+            opacity: 1,
+            transition: {
+                delay: 0.3,
+                duration: 0.5
+            }
+        },
+        closed: {
+            opacity: 0,
+            transition: {
+                duration: 0.5
+            }
+
+        }
+    }
+
+    const navClass = isOpen ? 'nav nav-open' : 'nav nav-closed';
     return (
         <header>
             <motion.nav
-            initial={false}
-            animate={isOpen ? "open" : "closed"}
-            custom={height}
-            ref={containerRef}
-            className="nav"
-        >
-            <motion.div className="background" variants={sidebar} />
+                initial={false}
+                animate={isOpen ? "open" : "closed"}
+                custom={height}
+                isOpen={isOpen}
+                ref={containerRef}
+                className={navClass}
+            >
+                <motion.div layout className="container-background" variants={containerBackgroundVariants} animate={isOpen ? "open" : "closed"}/>
+                <motion.div className="background" variants={sidebar} />
 
 
 
 
-            <Navigation />
-            <BurgerIcon toggle={toggleOpen} isOpen={isOpen} />
-        </motion.nav>
+                <Navigation />
+                <BurgerIcon toggle={toggleOpen} isOpen={isOpen} />
+            </motion.nav>
         </header>
-        
+
     )
 }
 

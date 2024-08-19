@@ -14,16 +14,33 @@ display: none;
 
   
  }
+
+  .nav-open {
+    z-index: 1;
+  }
+
+  .nav-closed {
+
+    z-index: 0;
+    transition:  z-index 2.5s;
+  }
+ 
+  
 @media  screen and (min-width: 1017px) {
   .nav {
   display: flex;
   flex-direction: column;
 
-  width: 100%;
+  width: 50%;
   height: 10vh;
   background-color: transparent;
  
 }
+ .nav[isOpen='false'] {
+  height: 10vh;
+  background-color: transparent;
+  transition: height 0.5s;
+ }
 
 ul {
   display: flex !important;
@@ -31,7 +48,8 @@ ul {
   align-items: center;
   list-style: none;
   height: 100%;
-  width: 40%;
+  ;
+  
 
   padding-bottom: 10px;
   padding-top: 10px;
@@ -43,27 +61,41 @@ color: white;
 li {
 opacity: 1 !important;
 height: 70%;
-width:50%;
+width:30%;
 transform: translateX(0) !important;
 
 
 }
+}
+.container-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(24, 23, 23, 0.5);
+  z-index: -1;
 }
 
 
 @media  (min-width: 250px) and (max-width: 1015px) {
    
     ul {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
         padding: 20px;
         position: absolute;
         top: 50px;
-        width: 230px;
+        
         list-style: none;
       
-        height: 80vh;
+        
         overflow: auto;
       
-        scrollbar-width: none;
+    
         
       }
 
@@ -79,11 +111,11 @@ transform: translateX(0) !important;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 200px;
     background: #fff;
   }
   
-  button {
+  header button {
    display: block;
     outline: none;
     border: none;
