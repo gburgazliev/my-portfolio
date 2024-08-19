@@ -33,6 +33,7 @@
 .menu-item.animate .item-background {
     transform: scale(1);
     
+    
   }
 
 @media  screen and (min-width: 1017px) {
@@ -44,4 +45,33 @@
     }
 
 
+}
+
+@media screen and (max-width: 1023px) {
+    .menu-item {
+        height: 100%;
+        margin: 0;
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .menu-item.animate .item-background {
+        transform: scale(1);
+    }
+  ;
+}
+
+@media screen and (max-width: 1016px) {
+  .menu-item {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+  .menu-item.animate .item-background {
+    transform: scale(0);
+}
 }
