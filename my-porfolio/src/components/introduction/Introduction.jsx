@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
-import GeorgiBurgazlievResume from '../../assets/GeorgiBurgazlievResume.pdf';
+import GeorgiBurgazlievResume from '../../assets/GeorgiBurgazlievResume.pdf'
+import { scrollToSection } from '../../scrollToSection';
 import './introduction.css';
 
 const Introduction = () => {
@@ -161,11 +162,14 @@ const Introduction = () => {
 
                 })} </motion.h2>
                 <motion.button layout id="introduction-button" variants={childVariants}
-                    whileHover={{ scale: 1.2, backgroundColor: 'rgb(202, 114, 59)' }} whileTap={{ backgroundColor: 'rgb(202, 114, 59)' }}>About Me  <motion.svg
+                    whileHover={{ scale: 1.2, backgroundColor: 'rgb(202, 114, 59)' }}
+                     whileTap={{ backgroundColor: 'rgb(202, 114, 59)' }} onClick={() => scrollToSection('about')}>About Me  
+                     <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 50 50"
+                        
                     >
                         <motion.path
                             fill="white"
