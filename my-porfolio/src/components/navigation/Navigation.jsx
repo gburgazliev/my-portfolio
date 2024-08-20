@@ -20,12 +20,11 @@ const Navigation = ({toggleOpen}) => {
   };
 
 
-
   return (
     <motion.ul variants={variants}>
 
       {menuItems.map((item, i) => (
-        <MenuItem string={item} i={i} key={i} toggleOpen={toggleOpen}/>
+        <MenuItem string={item}  key={i} toggleOpen={toggleOpen}/>
       ))}
     </motion.ul>
   )

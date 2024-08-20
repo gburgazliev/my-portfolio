@@ -5,7 +5,7 @@ import {scrollToSection} from '../../scrollToSection'
 import './menuItem.css';
 
 
-const MenuItem = ({ string, i, toggleOpen }) => {
+const MenuItem = ({ string, toggleOpen }) => {
     const id = string.toLowerCase();
     const itemRef = useRef();
 
@@ -26,8 +26,6 @@ const MenuItem = ({ string, i, toggleOpen }) => {
         }
     }
 
-
-
     useEffect(() => {
         const item = itemRef.current;
         const handleMouseEnter = (e) => {
@@ -41,7 +39,6 @@ const MenuItem = ({ string, i, toggleOpen }) => {
 
         const handleMouseLeave = (e) => {
             const rect = item.getBoundingClientRect();
-             
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
             item.style.setProperty("--x", `${x}px`);
