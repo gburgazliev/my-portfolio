@@ -3,7 +3,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 30px
+    padding: 30px;
+    margin-top: 5%;
+
 }
 
 .introduction .introduction-container {
@@ -53,6 +55,7 @@
     color: white;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
 
 }
 
@@ -113,7 +116,7 @@
         flex-direction: column;
         gap: 20px;
         align-items: center;
-        padding-top: 0%;
+        
     }
 
     .introduction img {
@@ -147,4 +150,12 @@
         padding: 10px;
         color: rgb(149, 102, 237);
     }
+    .introduction-container h1 {
+        color: white;
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+    
+    }
+
 }
