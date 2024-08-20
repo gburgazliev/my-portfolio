@@ -161,7 +161,7 @@ const Introduction = () => {
 
                 })} </motion.h2>
                 <motion.button layout id="introduction-button" variants={childVariants}
-                    whileHover={{ scale: 1.2, boxShadow: "0px 0px 8px rgb(38, 46, 245)" }}>About Me  <motion.svg
+                    whileHover={{ scale: 1.2, backgroundColor: 'rgb(202, 114, 59)' }} whileTap={{ backgroundColor: 'rgb(202, 114, 59)' }}>About Me  <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
@@ -184,7 +184,7 @@ const Introduction = () => {
 
                 <motion.div layout className="introduction-socials" variants={childVariants}>
 
-                   <motion.button layout className="socials-button"  whileHover={{scale: 1.1}}> 
+                   <motion.button layout className="socials-button"  whileHover={{scale: 1.1, backgroundColor: 'rgb(149, 102, 237)'}}> 
                     <a href={GeorgiBurgazlievResume} download='GeorgiBurgazlievResume.pdf'> Download CV</a>
                    </motion.button>
 
@@ -195,6 +195,7 @@ const Introduction = () => {
                             href="https://www.linkedin.com/in/georgi-burgazliev-117b9130a/"
                             target="_blank"
                             rel="noreferrer"
+                            whileHover={{ scale: 1.1 }}
                         >
                             <FontAwesomeIcon icon={faLinkedin} className='fa' />
                         </motion.a>
@@ -205,6 +206,7 @@ const Introduction = () => {
                             href="https://github.com/gburgazliev"
                             target="_blank"
                             rel="noreferrer"
+                            whileHover={{ scale: 1.1 }}
                         >
                             <FontAwesomeIcon icon={faGithub} className='fa' />
                         </motion.a>
@@ -215,6 +217,7 @@ const Introduction = () => {
                             href="mailto:burgazlievgeorgi@gmail.com"
                             target="_blank"
                             rel="noreferrer"
+                            whileHover={{ scale: 1.1 }}
                         >
                             <FontAwesomeIcon icon={faEnvelope} className='fa' />
                         </motion.a>

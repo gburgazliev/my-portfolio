@@ -29,13 +29,14 @@
 
 #introduction-button {
     display: flex;
-    height: 40px;
+   
     justify-content: center;
     align-items: center;
     align-self: center;
-    background: radial-gradient(circle, rgb(31, 13, 98), rgb(46, 79, 228));
+   background: transparent;
+    border: 2px solid rgb(202, 114, 59); ;
     color: white;
-    border: none;
+   
     font-size: 1rem;
     padding: 10px 20px;
     gap: 5px;
@@ -70,11 +71,11 @@
     display: flex;
     gap: 20px;
     justify-content: flex-start;
-    width: 60%;
+   
 }
 
 .fa {
-    font-size: 40px;
+    font-size: 50px;
     padding: 10px;
     color: rgb(149, 102, 237);
 }
@@ -89,7 +90,7 @@
 
     border: 1px solid rgb(149, 102, 237);
     font-size: 1rem;
-    padding: 0px 10px;
+    padding: 0px 20px;
     gap: 5px;
     border-radius: 13%;
   background: transparent;
@@ -132,13 +133,18 @@
     }
 
     .introduction-socials {
-        width: 100%;
+      
         margin: 0%;
     }
 
     #introduction-button {
-        align-self:flex-start;
-       padding: 25px 20px;
+        align-self:flex-end;
+       padding: 10px 10px;
         
+    }
+    .fa {
+        font-size: 40px;
+        padding: 10px;
+        color: rgb(149, 102, 237);
     }
 }
