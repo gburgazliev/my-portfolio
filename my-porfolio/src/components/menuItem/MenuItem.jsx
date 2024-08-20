@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { useEffect, useRef } from 'react';
+import {scrollToSection} from '../../scrollToSection'
 import './menuItem.css';
 
 
-const MenuItem = ({ string, i }) => {
-
+const MenuItem = ({ string, i, toggleOpen }) => {
+    const id = string.toLowerCase();
     const itemRef = useRef();
 
     const variants = {
@@ -24,6 +25,8 @@ const MenuItem = ({ string, i }) => {
             }
         }
     }
+
+
 
     useEffect(() => {
         const item = itemRef.current;
@@ -55,10 +58,10 @@ const MenuItem = ({ string, i }) => {
         }
     }, [])
 
-
-
+    
+    
     return (
-        <motion.li layout variants={variants}>
+        <motion.li layout variants={variants} onClick={() => scrollToSection(id, toggleOpen)}>
             <motion.div layout className='menu-item'
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}

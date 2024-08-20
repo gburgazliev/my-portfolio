@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import MenuItem from '../menuItem/MenuItem';
 
-const Navigation = () => {
+const Navigation = ({toggleOpen}) => {
 
   const menuItems = [
    'About', 'Projects', 'Contact'
@@ -25,7 +25,7 @@ const Navigation = () => {
     <motion.ul variants={variants}>
 
       {menuItems.map((item, i) => (
-        <MenuItem string={item} i={i} key={i} />
+        <MenuItem string={item} i={i} key={i} toggleOpen={toggleOpen}/>
       ))}
     </motion.ul>
   )
