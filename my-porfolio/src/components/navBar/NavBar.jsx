@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion, AnimatePresence, useCycle, delay } from 'framer-motion';
 import BurgerIcon from '../burgerIcon/BurgerIcon';
 import { useState } from 'react';
@@ -15,6 +15,7 @@ const NavBar = () => {
     const containerRef = useRef(null);
     const { height } = useDimensions(containerRef);
     const [isOpen, toggleOpen] = useCycle(false, true);
+
 
     const sidebar = {
         open: (height = 1000) => ({
@@ -58,6 +59,24 @@ const NavBar = () => {
         }
     }
 
+    useEffect(() => {
+        const containerBackground = document.querySelector('.container-background');
+
+        if (isOpen) {
+            document.body.classList.add('overflow-hidden')
+            containerBackground.style.display = 'block';
+        } else {
+            document.body.classList.remove('overflow-hidden')
+
+            setTimeout(() => {
+                containerBackground.style.display = 'none';
+            }, 1000)
+        }
+
+
+
+    }, [isOpen]);
+
     const navClass = isOpen ? 'nav nav-open' : 'nav nav-closed';
     return (
         <header>
@@ -65,17 +84,16 @@ const NavBar = () => {
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
                 custom={height}
-                isOpen={isOpen}
                 ref={containerRef}
                 className={navClass}
             >
-                <motion.div layout className="container-background" variants={containerBackgroundVariants} animate={isOpen ? "open" : "closed"}/>
+                <motion.div layout className="container-background" variants={containerBackgroundVariants} animate={isOpen ? "open" : "closed"} />
                 <motion.div className="background" variants={sidebar} />
 
 
 
 
-                <Navigation />
+                <Navigation toggleOpen={toggleOpen} />
                 <BurgerIcon toggle={toggleOpen} isOpen={isOpen} />
             </motion.nav>
         </header>
