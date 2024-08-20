@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
-
+import GeorgiBurgazlievResume from '../../assets/GeorgiBurgazlievResume.pdf';
 import './introduction.css';
 
 const Introduction = () => {
@@ -114,10 +114,7 @@ const Introduction = () => {
         }
     }
 
-    const socialVariants = {
-        hidden: { scale: 0.5 },
-        visible: { scale: 1 }
-    }
+    
 
     return (
         <motion.div layout className="introduction"
@@ -183,11 +180,18 @@ const Introduction = () => {
                             transition={{ duration: 1 }}
                         />
                     </motion.svg>  </motion.button>
-                <motion.div layout className="introduction-socials" variants={childVariants}>
-                    <motion.div layout
-                        className='socials-container'>
 
-                        <motion.a layout
+
+                <motion.div layout className="introduction-socials" variants={childVariants}>
+
+                   <motion.button layout className="socials-button"  whileHover={{scale: 1.1}}> 
+                    <a href={GeorgiBurgazlievResume} download='GeorgiBurgazlievResume.pdf'> Download CV</a>
+                   </motion.button>
+
+                    <motion.div layout
+                        className='socials-container' >
+
+                        <motion.a layout 
                             href="https://www.linkedin.com/in/georgi-burgazliev-117b9130a/"
                             target="_blank"
                             rel="noreferrer"

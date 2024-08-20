@@ -8,6 +8,9 @@ html, body {
 
 
 }
+a {
+  text-decoration: none;
+}
 
 /* html {
   background-color: #6464c2;

@@ -84,6 +84,29 @@
     gap: 20px;
 }
 
+.socials-button {
+    
+
+    border: 1px solid rgb(149, 102, 237);
+    font-size: 1rem;
+    padding: 0px 10px;
+    gap: 5px;
+    border-radius: 13%;
+  background: transparent;
+    
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;display: block;
+}
+
+.socials-button a {
+    color: white;
+}
+
+
+
+
 @media (min-width: 0px) and (max-width: 768px) {
     .introduction {
         flex-direction: column;
@@ -114,6 +137,8 @@
     }
 
     #introduction-button {
-        align-self: flex-start;
+        align-self:flex-start;
+       padding: 25px 20px;
+        
     }
 }
