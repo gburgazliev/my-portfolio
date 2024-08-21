@@ -187,11 +187,11 @@ const Introduction = () => {
 
 
                 <motion.div layout className="introduction-socials" variants={childVariants}>
-
+   <a href={GeorgiBurgazlievResume} download='GeorgiBurgazlievResume.pdf'>
                    <motion.button layout className="socials-button"  whileHover={{scale: 1.1, backgroundColor: 'rgb(149, 102, 237)'}}> 
-                    <a href={GeorgiBurgazlievResume} download='GeorgiBurgazlievResume.pdf'> Download CV</a>
+                  Download CV
                    </motion.button>
-
+</a>
                     <motion.div layout
                         className='socials-container' >
 

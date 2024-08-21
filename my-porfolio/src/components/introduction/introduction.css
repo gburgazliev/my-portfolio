@@ -97,6 +97,8 @@
     gap: 5px;
     border-radius: 13%;
   background: transparent;
+  height: 100%;
+  color: white;
     
     cursor: pointer;
     user-select: none;
