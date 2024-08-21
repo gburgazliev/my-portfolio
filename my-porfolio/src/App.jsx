@@ -10,11 +10,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 50); // Adjust the delay as needed
+    }, 50); 
   
-    return () => clearTimeout(timeoutId);
+   
   }, []);
 
   return (
