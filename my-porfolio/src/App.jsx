@@ -10,9 +10,15 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    setTimeout(() => {
+    const scrollToTop = () => {
       window.scrollTo(0, 0);
-    }, 0);
+    };
+  
+    window.addEventListener('beforeunload', scrollToTop);
+  
+    return () => {
+      window.removeEventListener('beforeunload', scrollToTop);
+    };
   }, []);
 
   return (
