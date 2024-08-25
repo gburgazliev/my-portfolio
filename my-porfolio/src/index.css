@@ -11,9 +11,22 @@ html, body {
 a {
   text-decoration: none;
 }
+::-webkit-scrollbar {
+  width: 15px; /* Width of the scrollbar */
+
+  background-color: #363636; /* Color of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #322a4d; /* Color of the scrollbar */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #754dcb; /* Padding around handle */
+  
+}
 
 html {
 scroll-behavior: smooth;
+
 }
 
 /* html {
@@ -45,3 +58,4 @@ body {
   
   overscroll-behavior: none;
 }
+
