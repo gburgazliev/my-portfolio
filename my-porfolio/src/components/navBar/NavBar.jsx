@@ -5,6 +5,9 @@ import { useState } from 'react';
 import { useRef } from 'react';
 import { useDimensions } from '../../useDimensions';
 import Navigation from '../navigation/Navigation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
+import { scrollToSection } from '../../scrollToSection';
 import './NavBar.css';
 
 
@@ -96,6 +99,14 @@ const NavBar = () => {
                 <Navigation toggleOpen={toggleOpen} />
                 <BurgerIcon toggle={toggleOpen} isOpen={isOpen} />
             </motion.nav>
+            <motion.div layout id='icon-name-container' whileHover={{scale: 1.2, cursor: 'pointer'}} whileTap={{scale: 0.8}} onClick={() => window.scrollTo(0, 0)}>
+                <motion.div layout>
+                    <FontAwesomeIcon icon={faJs} size="3x" />
+                </motion.div>
+                <motion.h1 layout>G.Burgazliev</motion.h1>
+
+            </motion.div>
+
         </header>
 
     )

@@ -8,12 +8,31 @@ header {
   left: 0;
   width: 100%;
   height: 10vh;
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
   position: fixed;
   z-index: 1;
+  display: flex;
+  
 
 
 
+}
+
+#icon-name-container {
+  display: flex;
+  color: yellow;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ 
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+#icon-name-container h1{
+ font-size: 30px ;
 }
 
 .nav-open {
@@ -79,15 +98,26 @@ header {
   top: 0;
   left: 0;
   bottom: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background: rgba(24, 23, 23, 0.5);
+  
 
 }
 
 
 
-@media (min-width: 250px) and (max-width: 1015px) {
+@media (min-width: 250px) and (max-width: 1016px) {
+  #icon-name-container {
+    display: none;
+  
+  }
+
+  header {
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    display: block;
+  }
 
   ul {
     display: flex !important;
@@ -115,6 +145,7 @@ header {
     left: 0;
     bottom: 0;
     width: 200px;
+    height: 100vh;
     background: #fff;
 
   }
