@@ -118,7 +118,7 @@ const Introduction = () => {
     
 
     return (
-        <motion.div layout className="introduction"
+        <motion.div layout id="introduction"
             initial="hidden"
             animate="visible"
             variants={containerVariants}

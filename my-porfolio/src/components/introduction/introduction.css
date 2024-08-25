@@ -1,26 +1,30 @@
-.introduction {
+#introduction {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     padding: 30px;
     margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    gap: 2rem;
 
 }
 
-.introduction .introduction-container {
+#introduction .introduction-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+   
     height: 100%;
     right: 100px;
     padding: 0 24px;
     gap: 10px;
 }
 
-.introduction img {
+#introduction img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -113,16 +117,16 @@
 
 
 
-@media (min-width: 0px) and (max-width: 768px) {
-    .introduction {
+@media (min-width: 0px) and (max-width: 872px) {
+    #introduction {
         flex-direction: column;
         gap: 20px;
         align-items: center;
         
     }
 
-    .introduction img {
-        width: 80%;
+    #introduction img {
+        width: 50%;
         height: 50%;
         border-radius: 50%;
         align-items: center;
@@ -131,13 +135,14 @@
         -moz-user-select: none;
     }
 
-    .introduction .introduction-container {
+    #introduction .introduction-container h1 {
         height: 100%;
         padding: 0;
         width: 100%;
+        font-size: 2rem;
     }
 
-    .introduction-socials {
+    #introduction-socials {
       
         margin: 0%;
     }
@@ -152,7 +157,7 @@
         padding: 10px;
         color: rgb(149, 102, 237);
     }
-    .introduction-container h1 {
+    #introduction-container h1 {
         color: white;
         margin: 0;
         font-family: Georgia, 'Times New Roman', Times, serif;
