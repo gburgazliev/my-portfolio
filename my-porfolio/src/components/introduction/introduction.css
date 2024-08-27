@@ -1,14 +1,15 @@
 #introduction {
-    display: flex;
+ 
+  display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
     padding: 30px;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
     
-    gap: 2rem;
+   
 
 }
 
@@ -126,8 +127,8 @@
     }
 
     #introduction img {
-        width: 50%;
-        height: 50%;
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
         align-items: center;
         user-select: none;
