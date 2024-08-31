@@ -112,7 +112,7 @@ const Contact = () => {
             <motion.form layout id='contact-form' action='https://getform.io/f/blljxeqb' method='POST' ref={formRef}>
 
                 <motion.input layout placeholder='Email' type='email' name='email' required value={form.email} onChange={handleInputChange} />
-                <span id='email-span'>Should be valid email</span>
+                <span id='email-span'>Should be a valid email</span>
                 <motion.input placeholder='Name' type='name' name='name' required minLength='3' value={form.name} onChange={handleInputChange} />
                 <span id='name-span'>Minimal length: {form.name.length} / 3</span>
                 <motion.textarea placeholder='Message' rows="5" id='message' name='message' required minLength='10' value={form.message} onChange={handleInputChange} />
