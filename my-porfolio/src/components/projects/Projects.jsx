@@ -2,7 +2,7 @@ import './projects.css'
 import React, { useEffect, useState } from 'react'
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import { motion } from 'framer-motion'
 import forum from '../../assets/forum.png'
 import fitnessTracker from '../../assets/fitnessTracker.png'
@@ -48,7 +48,7 @@ const Projects = () => {
     useEffect(() => {
         new Swiper('.swiper', {
         
-            modules: [Navigation, Pagination, Scrollbar],
+            modules: [Navigation, Pagination],
             speed: 500,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -66,8 +66,10 @@ const Projects = () => {
 
 
     return (
+      <div id='projects'>
 
-        <div class="swiper" id='projects'>
+      
+        <div class="swiper">
 
             <div class="swiper-wrapper">
 
@@ -173,9 +175,9 @@ const Projects = () => {
             <div class="swiper-button-next"></div>
 
 
-            <div class="swiper-scrollbar"></div>
+            
         </div>
-
+</div>
     )
 }
 
