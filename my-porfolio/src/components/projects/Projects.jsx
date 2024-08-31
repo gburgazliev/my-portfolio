@@ -68,17 +68,17 @@ const Projects = () => {
 
     return (
         <Reveal>
-            <div id='projects'>
+            <motion.div layout id='projects'>
 
       
-        <div class="swiper">
+        <motion.div layout class="swiper">
 
-            <div class="swiper-wrapper">
+            <motion.div layout class="swiper-wrapper">
 
-                <div class="swiper-slide" >
+                <motion.div layout class="swiper-slide" >
 
-                    <div class='swiper-slide-description-container'>
-                        <h2>Fitness Tracking App</h2>
+                    <motion.div layout class='swiper-slide-description-container'>
+                        <motion.h2 layout>Fitness Tracking App</motion.h2>
                         <motion.div layout class='image-container'>
                             < motion.div layout className='image-background'
                                 visible={hovered.fitness ? 'true' : 'false'}
@@ -98,18 +98,18 @@ const Projects = () => {
                             </motion.div>
                             <motion.img src={fitnessTracker} alt="forum" />
                         </motion.div>
-                        <p>
+                        <motion.p layout>
                             A fitness tracking app where users can schedule exersices
                             and track their progress. Users can also search for other users
                             and send friend
                             requests.
-                        </p>
-                    </div>
+                        </motion.p>
+                    </motion.div>
 
-                </div>
-                <div class="swiper-slide" >
-                    <div class='swiper-slide-description-container'>
-                        <h2>Forum</h2>
+                </motion.div>
+                <motion.div layout class="swiper-slide" >
+                    <motion.div layout class='swiper-slide-description-container'>
+                        <motion.h2 layout>Forum</motion.h2>
                         <motion.div layout class='image-container'>
                             < motion.div layout className='image-background'
                                 visible={hovered.forum ? 'true' : 'false'}
@@ -127,16 +127,16 @@ const Projects = () => {
                                 </motion.a>
 
                             </motion.div>
-                            <motion.img src={forum} alt="forum" />
+                            <motion.img layout src={forum} alt="forum" />
                         </motion.div>
-                        <p>  A gaming forum where passionate gamers can create posts, post comments and like other users posts and comments. Can also delete
+                        <motion.p layout>  A gaming forum where passionate gamers can create posts, post comments and like other users posts and comments. Can also delete
                             comments from their posts.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                <div class='swiper-slide-description-container'>
-                        <h2>Voleyball team</h2>
+                        </motion.p>
+                    </motion.div>
+                </motion.div>
+                <motion.div layout class="swiper-slide">
+                <motion.div layout class='swiper-slide-description-container'>
+                        <motion.h2 layout>Voleyball team</motion.h2>
                         <motion.div layout class='image-container'>
                             < motion.div layout className='image-background'
                                 visible={hovered.voleyball ? 'true' : 'false'}
@@ -163,23 +163,23 @@ const Projects = () => {
                             </motion.div>
                             <motion.img src={voleyball} alt="voleyball" />
                         </motion.div>
-                        <p>
+                        <motion.p layout>
                         A portfolio website for a volleyball team, including admin controls for easily adding and removing staff in a real-time database.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                        </motion.p>
+                    </motion.div>
+                </motion.div>
+            </motion.div>
 
            
 
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <motion.div layout class="swiper-button-prev"></motion.div>
+            <motion.div layout class="swiper-button-next"></motion.div>
 
 
             
-        </div>
-</div>
+        </motion.div>
+</motion.div>
         </Reveal>
       
     )

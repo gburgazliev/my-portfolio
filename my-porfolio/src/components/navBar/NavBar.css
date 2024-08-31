@@ -65,6 +65,7 @@ header {
     height: 10vh;
     background-color: transparent;
     transition: height 0.5s;
+   
   }
 
   ul {
@@ -129,7 +130,9 @@ header {
     top: 50px;
     list-style: none;
    
+   
   }
+  
 
   .nav {
     position: absolute;
@@ -147,6 +150,7 @@ header {
     width: 200px;
     height: 100vh;
     background: #fff;
+   
 
   }
 
