@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React, { useEffect, useState, useRef } from 'react'
-
+import Reveal from '../Reveal/Reveal'
 import './contact.css'
 
 const Contact = () => {
@@ -100,6 +100,9 @@ const Contact = () => {
 
 
     return (
+        <Reveal>
+
+        
         <motion.div layout id='contact'>
 
             <motion.h3>You can connect with me here</motion.h3>
@@ -124,7 +127,7 @@ const Contact = () => {
                 >Submit </motion.button>
             </motion.form>
         </motion.div>
-
+</Reveal>
 
     )
 }

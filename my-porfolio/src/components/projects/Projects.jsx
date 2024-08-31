@@ -9,6 +9,7 @@ import fitnessTracker from '../../assets/fitnessTracker.png'
 import voleyball from '../../assets/voleyball.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import Reveal from '../Reveal/Reveal';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Projects = () => {
@@ -66,7 +67,8 @@ const Projects = () => {
 
 
     return (
-      <div id='projects'>
+        <Reveal>
+            <div id='projects'>
 
       
         <div class="swiper">
@@ -178,6 +180,8 @@ const Projects = () => {
             
         </div>
 </div>
+        </Reveal>
+      
     )
 }
 

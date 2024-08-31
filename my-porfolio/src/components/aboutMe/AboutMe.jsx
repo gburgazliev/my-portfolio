@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion'
 import Contact from '../contact/Contact'
+import Reveal from '../Reveal/Reveal';
 import './aboutMe.css'
 const AboutMe = () => {
 
 
 
     return (
+        <Reveal>
         <motion.div layout id='about' >
             <motion.div layout className='about-container'>
                 <motion.h1 layout>
@@ -21,7 +23,8 @@ const AboutMe = () => {
             </motion.div>
             <Contact/> 
 
-        </motion.div>
+        </motion.div> 
+    </Reveal>
     )
 }
 
