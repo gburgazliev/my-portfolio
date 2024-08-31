@@ -1,0 +1,93 @@
+.swiper {
+    height: 600px;
+    width: 100%;
+ z-index: 0 !important;
+  
+} 
+.swiper p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5rem;
+}
+
+.swiper-slide {
+   
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+   }
+   .swiper-slide img{
+    width: 50%;
+    border-radius: 13px;
+    
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    border: 3px solid grey;
+   }
+   
+   .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+   }
+  .image-background {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 0,0, 0.5);
+   border-radius: 13px;
+   opacity: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+  
+  }
+  .image-background[visible='true'] {
+    opacity: 1;
+    
+  }
+  .fa-image-background {
+    height: 3rem;
+    color: white;
+  }
+
+
+   .swiper-slide-description-container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90%;
+    color: white;
+    
+   }
+
+   .swiper-slide-description-container p {
+ text-align: justify;
+     
+    }
+
+    .project-bg-icons-container {
+      display: flex;
+      gap: 40px;
+    }
+
+   
+
+   @media screen and (max-width: 930px) {
+    .swiper-slide img{
+        width: 80%;
+       }
+     .image-background{
+        width: 80%;
+     }
+   }
+
+   
