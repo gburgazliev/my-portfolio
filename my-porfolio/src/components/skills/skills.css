@@ -1,0 +1,36 @@
+#skills {
+   padding: 10%;
+   padding-top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.container {
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.technologies-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+justify-content: center;
+
+width: 100%;
+
+
+
+padding: 1rem;
+overflow: hidden;
+background-color: rgb(27, 24, 36);
+border: 5px solid rgb(30, 199, 205);
+border-radius: 13px;
+gap:1rem;
+   
+}
+
+

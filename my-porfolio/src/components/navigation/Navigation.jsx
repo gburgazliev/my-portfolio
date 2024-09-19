@@ -5,7 +5,7 @@ import MenuItem from '../menuItem/MenuItem';
 const Navigation = ({toggleOpen}) => {
 
   const menuItems = [
-   'About', 'Projects', 'Contact'
+   'About', 'Projects', 'Contact', 'Skills'
   ]
 
   const variants = {

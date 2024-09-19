@@ -7,7 +7,13 @@ export const scrollToSection = (id, toggleOpen) => {
 
 
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const offset = -250;
+    const target = elementPosition + offset;
+    window.scrollTo({
+      top: target,
+      behavior: 'smooth'
+    })
   }
 
   if (bodyWidth < 1017) {

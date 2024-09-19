@@ -5,6 +5,7 @@ import NavBar from './components/navBar/NavBar.jsx'
 import Introduction from './components/introduction/Introduction.jsx'
 import AboutMe from './components/aboutMe/AboutMe.jsx'
 import Projects from './components/projects/Projects.jsx'
+import Skills from './components/skills/Skills.jsx'
 import './App.css'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Introduction />
       <AboutMe />
       <Projects />
+      <Skills/>
     </>
   )
 }
