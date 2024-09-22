@@ -63,6 +63,7 @@ const Contact = () => {
         e.preventDefault();
         const isEmailValid = checkEmail(form.email);
         const isNameValid = checkName(form.name);
+        const formDiv = document.getElementById('contact-form');
         const isMessageValid = checkMessage(form.message);
         if (isEmailValid && isNameValid && isMessageValid) {
             formDiv.submit();
