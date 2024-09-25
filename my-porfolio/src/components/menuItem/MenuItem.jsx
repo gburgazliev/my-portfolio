@@ -6,7 +6,10 @@ import './menuItem.css';
 
 
 const MenuItem = ({ string, toggleOpen }) => {
-    const id = string.toLowerCase();
+    let id = string.toLowerCase();
+    if (id === 'about') {
+        id = 'about-me'
+    }
     const itemRef = useRef();
 
     const variants = {
