@@ -8,8 +8,14 @@ export const scrollToSection = (id, toggleOpen) => {
 
   if (element) {
     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-    const offset = -250;
-    const target = elementPosition + offset;
+    const viewportHeight = window.innerHeight;
+    const elementHeight = element.getBoundingClientRect().height;
+
+    // Calculate offset to center the element vertically
+    const offset = (viewportHeight - elementHeight) / 2;
+    
+    // Calculate the final target position to scroll to
+    const target = elementPosition - offset
     window.scrollTo({
       top: target,
       behavior: 'smooth'

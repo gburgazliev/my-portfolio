@@ -163,7 +163,7 @@ const Introduction = () => {
                 })} </motion.h2>
                 <motion.button layout id="introduction-button" variants={childVariants}
                     whileHover={{ scale: 1.2, backgroundColor: 'rgb(202, 114, 59)' }}
-                     whileTap={{ backgroundColor: 'rgb(202, 114, 59)' }} onClick={() => scrollToSection('about')}>About Me  
+                     whileTap={{ backgroundColor: 'rgb(202, 114, 59)' }} onClick={() => scrollToSection('about-me')}>About Me  
                      <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"

@@ -9,7 +9,7 @@ const AboutMe = () => {
     return (
         <Reveal>
         <motion.div layout id='about' >
-            <motion.div layout className='about-container'>
+            <motion.div layout className='about-container' id='about-me'>
                 <motion.h1 layout>
                     About Me
                 </motion.h1>
