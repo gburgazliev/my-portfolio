@@ -6,6 +6,7 @@
   flex-direction: column;
   gap: 2rem;
   z-index: 0;
+  padding-bottom: 2rem
 }
 
 .container {
