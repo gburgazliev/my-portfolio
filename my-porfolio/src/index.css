@@ -6,8 +6,12 @@ html, body {
   padding: 0;
 
 
-
 }
+
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,11 +21,8 @@ a {
   background-color: #363636; /* Color of the scrollbar */
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #322a4d; /* Color of the scrollbar */
-  border-radius: 10px; /* Rounded corners */
-  border: 3px solid #754dcb; /* Padding around handle */
-  
+body::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
 }
 
 html {

@@ -1,13 +1,19 @@
 #about {
     margin-top: 20%;
-    padding: 30px 10%;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
+    align-items: center;
     gap: 50px;
    user-select: none;
 }
 
+@media screen and (max-width: 662px) {
+  #about {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Reduce min-width for small screens */
+  }
+}
 #about h1 {
     color: white;
     margin: 0;
@@ -22,6 +28,8 @@
   justify-content: center;
   position: relative;
   bottom: 50px;
+ 
+ 
 }
 
 .about-container a{
