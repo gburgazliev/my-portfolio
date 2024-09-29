@@ -5,13 +5,13 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
    user-select: none;
 }
 
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 600px) {
   #about {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Reduce min-width for small screens */
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduce min-width for small screens */
   }
 }
 #about h1 {
@@ -22,12 +22,13 @@
 }
 
 .about-container {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   bottom: 50px;
+ left: 10%;
  
  
 }
@@ -53,4 +54,13 @@
    .about-container{
     bottom: 0px;
    }
+}
+@media screen and (max-width: 1040px) {
+   .about-container {
+    left: 0;
+   width: 100%;
+   
+   } 
+
+  
 }
